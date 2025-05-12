@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+div .logo img{
+    width: 250px;
+    padding: 10px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.container .row .col-2 p{
+    font-size: 30px;
+    color: #ffffff;
+
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 60%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin:25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: white;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+.header{
+    background:  radial-gradient(circle, red, black)
+}
+.header .row{
+    margin-top: 20px;
+}
+.container .navbar .cart{
+    height: 25px;
+    width: 25px;
+    
+}
+.btn:hover{
+    background: red;
+    box-shadow: 5px 5px 2px black  ;
+}
+.categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis:30% ;
+    min-width: 250px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.small-container .phone{
+    width:200px;
+}
+.col-4{
+    flex-basis: 25%;
+    padding: 10px;
+    min-height: 200px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+    transition: transform 0.5s;
+
+}
+.col-4 img{
+    width: 100%;
+    border-radius: 8px;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position:absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+}
+h4{
+    color: #555;
+    font-weight:normal ;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.col-4:hover{
+    transform: translateY(-7px);
+}
+/* footer */
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 30px 20px;
+}
+.footer h3{
+    color: white;
+    margin: 10px;
+}
+.footer img{
+    width: 300px;
+    height: 50px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3{
+    min-width: 250px;
+    margin-bottom: 20px;
+
+}
+
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-3,.footer-col-1{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.footer hr {
+    border: none;
+    background: #b5b5b5;
+    height:1px;
+    margin: 20px 0;
+}
+.Copyright{
+    text-align: center;
+}
+.menu{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    display: none;
+}
+/* menu */
+@media only screen and (max-width:800px){
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+    }
+    nav ul li {
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #ffffff;
+    }
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+    .footer .container .row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+    .footer .container .row img{
+        height: 40px;
+        width: 180px;
+
+    }
+    .footer .container .row .follow{
+        padding-left: 5px;
+        text-align: center;
+    }
+    .footer .container .row .content{
+        padding-left: 5px;
+        text-align: center;
+    }
+    .footer-col-3{
+        flex-basis: 12%;
+        text-align: center;
+    }
+}
